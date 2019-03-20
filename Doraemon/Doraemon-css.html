@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#frame {
+				position: absolute;
+				left: 200px;
+				top: 50px;
+			}
+			
+			#head {
+				position: absolute;
+				width: 400px;
+				height: 400px;
+				border-radius: 200px;
+				border: 1px black solid;
+				background-color: #09B8E3;
+			}
+			
+			#face {
+				position: absolute;
+				width: 340px;
+				height: 320px;
+				border-radius: 170px/160px;
+				border: 1px black solid;
+				background-color: white;
+				left: 30px;
+				top: 80px;
+			}
+			
+			#eye-left {
+				position: absolute;
+				width: 90px;
+				height: 100px;
+				border-radius: 90px/100px;
+				border: 1px black solid;
+				background-color: white;
+				left: 110px;
+				top: 20px;
+			}
+			
+			#eye-right {
+				position: absolute;
+				width: 90px;
+				height: 100px;
+				border-radius: 90px/100px;
+				border: 1px black solid;
+				background-color: white;
+				left: 200px;
+				top: 20px;
+			}
+			
+			#mouth {
+				position: absolute;
+				width: 250px;
+				height: 160px;
+				border-radius: 250px/160px;
+				border-bottom: 2px black solid;
+				background-color: white;
+				left: 80px;
+				top: 160px;
+			}
+			
+			#nose {
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				border-radius: 30px;
+				border: 1px black solid;
+				background-color: red;
+				left: 170px;
+				top: 100px;
+			}
+			
+			#nose-light {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				border-radius: 30px;
+				background-color: white;
+				left: 180px;
+				top: 110px;
+			}
+			
+			#eyeball-left {
+				position: absolute;
+				width: 30px;
+				height: 40px;
+				border-radius: 30px/40px;
+				border-top: 4px black solid;
+				background-color: white;
+				left: 165px;
+				top: 60px;
+			}
+			
+			#eyeball-right {
+				position: absolute;
+				width: 30px;
+				height: 40px;
+				border-radius: 30px/40px;
+				border-top: 4px black solid;
+				background-color: white;
+				left: 205px;
+				top: 60px;
+			}
+			
+			#middle-line {
+				position: absolute;
+				width: 0px;
+				height: 160px;
+				border-left: #000000 1px solid;
+				left: 200px;
+				top: 160px;
+			}
+			
+			#mustache-left1 {
+				position: absolute;
+				width: 145px;
+				height: 0px;
+				border-top: #000000 1px solid;
+				left: 40px;
+				top: 160px;
+				transform: rotate(15deg);
+			}
+			
+			#mustache-left2 {
+				position: absolute;
+				width: 150px;
+				height: 0px;
+				border-top: #000000 1px solid;
+				left: 25px;
+				top: 200px;
+			}
+			
+			#mustache-left3 {
+				position: absolute;
+				width: 145px;
+				height: 0px;
+				border-top: #000000 1px solid;
+				left: 30px;
+				top: 240px;
+				transform: rotate(-15deg);
+			}
+			
+			#mustache-right1 {
+				position: absolute;
+				width: 145px;
+				height: 0px;
+				border-top: #000000 1px solid;
+				left: 215px;
+				top: 160px;
+				transform: rotate(-15deg);
+			}
+			
+			#mustache-right2 {
+				position: absolute;
+				width: 150px;
+				height: 0px;
+				border-top: #000000 1px solid;
+				left: 225px;
+				top: 200px;
+			}
+			
+			#mustache-right3 {
+				position: absolute;
+				width: 145px;
+				height: 0px;
+				border-top: #000000 1px solid;
+				left: 225px;
+				top: 240px;
+				transform: rotate(15deg);
+			}
+			
+			#shoulder {
+				position: absolute;
+				width: 420px;
+				height: 210px;
+				border-radius: 210px 210px 0 0;
+				border: 1px black solid;
+				background-color: #09B8E3;
+				left: -15px;
+				top: 320px;
+			}
+			
+			#hand-left {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				border: 1px black solid;
+				background-color: #FFFFFF;
+				left: -40px;
+				top: 460px;
+			}
+			
+			#hand-right {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				border: 1px black solid;
+				background-color: #FFFFFF;
+				left: 340px;
+				top: 460px;
+			}
+			
+			#body {
+				position: absolute;
+				width: 320px;
+				height: 260px;
+				border-radius: 20px 20px 180px 180px/150px 150px 260px 260px;
+				border: 1px black solid;
+				border-top: #FFFFFF;
+				background-color: #09B8E3;
+				left: 40px;
+				top: 420px;
+			}
+			
+			#belly {
+				position: absolute;
+				width: 260px;
+				height: 250px;
+				border-radius: 130px/125px;
+				border: 1px black solid;
+				background-color: #FFFFFF;
+				left: 70px;
+				top: 360px;
+			}
+			
+			#pocket {
+				position: absolute;
+				width: 200px;
+				height: 100px;
+				border-radius: 0 0 100px 100px;
+				border: 1px black solid;
+				background-color: #FFFFFF;
+				left: 100px;
+				top: 480px;
+			}
+			
+			#necklace {
+				position: absolute;
+				width: 270px;
+				height: 30px;
+				border-radius: 50px 50px 50px 50px;
+				border: 1px black solid;
+				background-color: #FF0000;
+				left: 60px;
+				top: 353px;
+			}
+			
+			#bell {
+				position: absolute;
+				width: 90px;
+				height: 90px;
+				border-radius: 45px;
+				border: 1px black solid;
+				background-color: yellow;
+				left: 155px;
+				top: 352px;
+			}
+			
+			#bell-hole {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				border-radius: 10px;
+				border: 1px black solid;
+				background-color: darkgoldenrod;
+				left: 190px;
+				top: 400px;
+			}
+			
+			#bell-line {
+				position: absolute;
+				width: 0px;
+				height: 21px;
+				border-left: 1px black solid;
+				left: 200px;
+				top: 422px;
+			}
+			
+			#bell-circle {
+				position: absolute;
+				width: 100px;
+				height: 10px;
+				border-radius: 50px 50px 50px 50px;
+				border: 1px black solid;
+				background-color: yellow;
+				left: 150px;
+				top: 380px;
+			}
+			
+			#foot-left {
+				position: absolute;
+				width: 140px;
+				height: 50px;
+				border-radius: 80px 45px 45px 120px /80px 0px 80px 80px;
+				border: 1px black solid;
+				background-color: white;
+				left: 60px;
+				top: 650px;
+			}
+			
+			#foot-right {
+				position: absolute;
+				width: 140px;
+				height: 50px;
+				border-radius: 45px 80px 120px 45px /0px 80px 80px 80px;
+				border: 1px black solid;
+				background-color: white;
+				left: 200px;
+				top: 650px;
+			}
+			
+			#leg-line {
+				position: absolute;
+				width: 0px;
+				height: 21px;
+				border-left: 1px black solid;
+				left: 200px;
+				top: 630px;
+			}
+			
+			#crotch {
+				position: absolute;
+				width: 21px;
+				height: 0px;
+				border-top: 1px black solid;
+				left: 190px;
+				top: 630px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="frame">
+			<div id="shoulder">
+			</div>
+			<div id="hand-left">
+			</div>
+			<div id="hand-right">
+			</div>
+			<div id="body">
+			</div>
+			<div id="foot-left">
+			</div>
+			<div id="foot-right">
+			</div>
+			<div id="leg-line">
+			</div>
+			<div id="crotch">
+			</div>
+			<div id="head">
+				<div id="face">
+				</div>
+				<div id="belly">
+				</div>
+				<div id="pocket">
+				</div>
+				<div id="necklace">
+				</div>
+				<div id="bell">
+				</div>
+				<div id="bell-hole">
+				</div>
+				<div id="bell-line">
+				</div>
+				<div id="bell-circle">
+				</div>
+				<div id="eye-left">
+				</div>
+				<div id="eye-right">
+				</div>
+				<div id="mouth">
+				</div>
+				<div id="nose">
+				</div>
+				<div id="nose-light">
+				</div>
+				<div id="eyeball-left">
+				</div>
+				<div id="eyeball-right">
+				</div>
+				<div id="middle-line">
+				</div>
+				<div id="mustache-left1">
+				</div>
+				<div id="mustache-left2">
+				</div>
+				<div id="mustache-left3">
+				</div>
+				<div id="mustache-right1">
+				</div>
+				<div id="mustache-right2">
+				</div>
+				<div id="mustache-right3">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
