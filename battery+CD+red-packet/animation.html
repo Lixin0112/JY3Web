@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			@keyframes runaway {
+				0% {
+					background-color: red;
+					left: 0;
+					top: 0;
+					transform: rotate(0deg);
+				}
+				20% {
+					background-color: orange;
+					transform: rotate(72deg);
+				}
+				40% {
+					background-color: yellow;
+					left: 200px;
+					top: 0;
+					left: 400px;
+					top: 0;
+					transform: rotate(144deg);
+				}
+				60% {
+					background-color: green;
+					left: 600px;
+					top: 0;
+					transform: rotate(216deg);
+				}
+				80% {
+					background-color: blue;
+					left: 800px;
+					top: 0;
+					transform: rotate(288deg);
+				}
+				100% {
+					background-color: purple;
+					left: 1000px;
+					top: 0;
+					transform: rotate(360deg);
+				}
+			}
+			
+			#one {
+				margin-top: 50px;
+				margin-left: 100px;
+				width: 100px;
+				height: 50px;
+				border-radius: 50px;
+				position: relative;
+				text-align: center;
+				font-weight: bold;
+				line-height: 50px;
+				animation: runaway 5s linear infinite alternate;
+			}
+			/*第一个电池==========第一个电池==============第一个电池================*/
+			
+			@keyframes power {
+				from {
+					width: 0%;
+				}
+				to {
+					width: 95%;
+				}
+			}
+			
+			#frame {
+				width: 160px;
+				height: 60px;
+				margin-top: 50px;
+				margin-left: 250px;
+				display: flex;
+				align-items: center;
+			}
+			
+			#battery {
+				width: 85%;
+				height: 100%;
+				border: black 3px solid;
+				border-radius: 10px;
+				display: flex;
+				justify-content: flex-start;
+			}
+			
+			#energy {
+				margin: 2.5%;
+				height: 90%;
+				border-radius: 5px;
+				animation: power 3s linear infinite;
+				background-color: limegreen;
+			}
+			
+			#point {
+				margin-left: 0.5%;
+				width: 4%;
+				height: 30%;
+				background-color: black;
+				border-radius: 0 50% 50% 0;
+			}
+			/*第二个电池=====================第二个电池=============第二个电池==========*/
+			
+			@keyframes power1 {
+				0% {
+					background-color: white;
+				}
+				5% {
+					background-color: white;
+				}
+				6% {
+					background-color: limegreen;
+				}
+				100% {
+					background-color: limegreen;
+				}
+			}
+			
+			@keyframes	power2 {
+				0% {
+					background-color: white;
+				}
+				20% {
+					background-color: white;
+				}
+				21% {
+					background-color: limegreen;
+				}
+				100% {
+					background-color: limegreen;
+				}
+			}
+			
+			@keyframes	power3 {
+				0% {
+					background-color: white;
+				}
+				40% {
+					background-color: white;
+				}
+				41% {
+					background-color: limegreen;
+				}
+				100% {
+					background-color: limegreen;
+				}
+			}
+			
+			@keyframes	power4 {
+				0% {
+					background-color: white;
+				}
+				60% {
+					background-color: white;
+				}
+				61% {
+					background-color: limegreen;
+				}
+				100% {
+					background-color: limegreen;
+				}
+			}
+			
+			@keyframes	power5 {
+				0% {
+					background-color: white;
+				}
+				80% {
+					background-color: white;
+				}
+				81% {
+					background-color: limegreen;
+				}
+				100% {
+					background-color: limegreen;
+				}
+			}
+			
+			#framex {
+				width: 160px;
+				height: 60px;
+				margin-top: 50px;
+				margin-left: 250px;
+				display: flex;
+				align-items: center;
+			}
+			
+			#batteryx {
+				width: 85%;
+				height: 100%;
+				border: black 3px solid;
+				border-radius: 10px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			
+			#energy1 {
+				margin: 0.5%;
+				height: 98%;
+				width: 20%;
+				border-radius: 8px 0 0 8px;
+				animation: power1 3s linear infinite;
+			}
+			
+			#energy2 {
+				margin: 0.5%;
+				height: 98%;
+				width: 20%;
+				animation: power2 3s linear infinite;
+			}
+			
+			#energy3 {
+				margin: 0.5%;
+				height: 98%;
+				width: 20%;
+				animation: power3 3s linear infinite;
+			}
+			
+			#energy4 {
+				margin: 0.5%;
+				height: 98%;
+				width: 20%;
+				animation: power4 3s linear infinite;
+			}
+			
+			#energy5 {
+				margin: 0.5%;
+				height: 98%;
+				width: 20%;
+				border-radius: 0 8px 8px 0;
+				animation: power5 3s linear infinite;
+			}
+			
+			#pointx {
+				margin-left:  0.5%;
+				width: 4%;
+				height: 30%;
+				background-color: black;
+				border-radius: 0 50% 50% 0;
+			}
+			/*=============唱片唱片唱片唱片唱片唱片唱片唱片唱片=====================*/
+			@keyframes play{
+				from{
+					transform:rotate(0);
+				}
+				to{
+					transform:rotate(360deg);
+				}
+			}
+		
+			#CD{
+				display:flex;
+				margin-top: 50px;
+				margin-left: 150px;
+				width:300px;
+				height:300px;
+				background-color: black;
+				border-radius: 50%;
+				justify-content: center;
+				align-items: center;
+				animation: play 15s linear infinite;
+			}
+			#Justin{
+				width:200px;
+				height:200px;
+				border-radius:50%;
+			}
+			/*==========红包红包红包红包红包红包红包红包红包红包红包红包==*/
+		#red-packet{
+			width:400px;
+			height:600px;
+			background-color:#D84E43;
+			position: absolute;
+			top: 150px;
+			left: 800px;
+		}
+		#cover-circle{
+			width:100%;
+			height:66%;
+			background-color: #E1544A;
+			border-radius:0 0 500px 500px/ 0 0 150px  150px ;
+			display: flex;
+			align-content:center ;
+			flex-direction: column;
+		}
+		#photo{
+			margin-top:40px;
+		    width: 100%;
+		    height:120px;
+		    text-align: center;
+		    display: flex;
+		    
+		}
+		#picture{
+			width:80px;
+			height:80px;
+			border-radius: 50%;
+			margin:auto;
+		}
+		h1{
+			color: palegoldenrod;
+			font-weight:100 ;
+			text-align: center;
+		}	
+		p{
+			text-align:center ;
+		    font-size: 20px;
+		    margin-top:10px;
+		    color: palegoldenrod;
+		}	
+	    #open1{
+	    	width:160px;
+	    	height:160px;
+	    	border-radius: 80px;
+	        position:absolute;
+	        top:340px;
+	        left:120px;
+	        background-color: #DCBC83;
+	        display:flex;
+	        align-items: center;
+	        justify-content: center;
+	        
+	    }
+	    #open2{
+	    	width:140px;
+	    	height:140px;
+	    	border-radius: 70px;
+	    	border:0.2px goldenrod solid;
+	    	text-align: center;
+	    }
+		span{
+			line-height: 134px;
+			font-size: 60px;
+			font-family: "宋体";
+			font-weight: bold;
+		}
+		#look{
+			margin-top: 135px;
+		}
+		#close{
+			position:absolute;
+			top:5px;
+			left:20px;
+			font-size: 45px;
+			color:saddlebrown;
+			font-weight: 100;
+		}
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="one">
+			ALOHA
+		</div>
+		<!--============第一个电池=========第一个电池===========第一个电池======-->
+		<div id="frame">
+			<div id="battery">
+				<div id="energy">
+				</div>
+			</div>
+			<div id="point">
+			</div>
+		</div>
+		<!--=========第二个电池=======第二个电池=========第二个电池========-->
+		<div id="framex">
+			<div id="batteryx">
+				<div id="energy1">
+				</div>
+				<div id="energy2">
+				</div>
+				<div id="energy3">
+				</div>
+				<div id="energy4">
+				</div>
+				<div id="energy5">
+				</div>
+			</div>
+			<div id="pointx">
+			</div>
+		</div>
+		<!--===唱片唱片唱片唱片唱片唱片唱片唱片唱片唱片唱片唱片唱片唱片==============-->
+		<div id="CD">
+			<img id="Justin" src="img/timg.jpg" alt="找不到了" />
+		</div>
+		<!--===红包红包红包红包红包红包红包红包红包红包红包红包红包==================-->
+		<div id="red-packet">
+			<div id="cover-circle">
+				<div id="photo">
+			    <img  id="picture" src="img/微信图片_20190321161127.jpg" alt="图片不见了" />
+				</div>
+				<div id="words">
+					<p>尹浩亮</p>
+					<p>发了一个红包，金额随机</p>
+					<h1>恭喜发财，大吉大利！</h1>
+				</div>
+			</div>
+			
+			<div id="open1">
+				<div id="open2">
+					<span>開</span>
+				</div>
+			</div>
+			<p id="look">
+				看看大家的手气>
+			</p>
+			<div id="close">
+				×
+			</div>
+		</div>
+		
+	</body>
+
+</html>
