@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+			}
+			
+			#blue {
+				width: 100%;
+				height: 100%;
+				background-color: lightskyblue;
+			}
+			
+			#red {
+				width: 100%;
+				height: 100%;
+				background-color: indianred;
+				position: absolute;
+				top: 0px;
+				transition: all 1s;
+			}
+			
+			ul {
+				list-style: none;
+				color: white;
+				
+			}
+			
+			.move {
+				transform: translateX(200px);
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery.js">
+		</script>
+	</head>
+
+	<body>
+		<div id="blue">
+			<ul>
+				<li>
+					Neuedu
+				</li>
+				<li>
+					Neuedu
+				</li>
+				<li>
+					Neuedu
+				</li>
+				<li>
+					Neuedu
+				</li>
+				<li>
+					Neuedu
+				</li>
+			</ul>
+		</div>
+		<div id="red">
+			<button>
+				click
+			</button>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$("button").click(function() {
+				$("#red").toggleClass("move");
+			})
+		})
+	</script>
+
+</html>

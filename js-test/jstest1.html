@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				background-color: indianred;
+				width: 200px;
+				height: 200px;
+				display: none;
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery.js">
+			
+		</script>
+	</head>
+	<body>
+		<img src="img/u=1467956823,254581615&fm=26&gp=0.jpg" alt="sorry" />
+		<div></div>
+		
+	</body>
+	<script type="text/javascript">
+	 $(function(){
+//	 	alert("hello");
+      $("img").click(function(){
+      	 $("div").toggle();
+      })
+	 })
+	</script>
+</html>
