@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/status.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/iframe.css"/>
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js">
+	    </script>
+	</head>
+
+	<body>
+		<div id="status">
+			<div id="status-left">
+				<img id="signal" src="img/信号.svg" />
+				<span id="network">
+				中国联通&nbsp;&nbsp;&nbsp;&nbsp;4G
+			</span>
+			</div>
+			<div id="status-middle">
+				<span id="time">上午9:27</span>
+			</div>
+			<div id="status-right">
+				<img id="lock" src="img/屏幕锁定.svg" alt="" />
+				<img id="alarm" src="img/alarm_fill_MT_UI.svg" />
+				<span id="battery-content">100% </span>
+				<img id="battery" src="img/ios-battery-full.svg" alt="" />
+			</div>
+		</div>
+		<div id="framespace">
+			<iframe  src="../wechat-part1/chat-list.html" frameborder="0" name="show"></iframe>
+		</div>
+		<footer>
+			<div>
+				<a href="../wechat-part1/chat-list.html" target="show"><img id="chat-icon"  src="img/chat.svg" /></a><br/>
+				<span id="chat-text">微信 </span>
+				<div id="meg">
+					<span>99+</span>
+				</div>
+			</div>
+			<div>
+				<a href="../wechat-part2/contacts.html" target="show"><img id="contacts-icon" src="img/contacts .svg" /></a><br/>
+				<span id="contacts-text">通讯录</span>
+			</div>
+			<div>
+				<a href="../wechat-part3/discover.html" target="show"><img id="discover-icon" src="img/发现.svg" /></a><br/>
+				<span id="discover-text">发现 </span>
+			</div>
+			<div>
+				<a href="../wechat-part4/me.html" target="show"><img id="me-icon" src="img/我 .svg" /></a><br/>
+				<span id="me-text">我</span>
+			</div>
+		</footer>
+        <script type="text/javascript">
+        	$(function(){
+        		$("#chat-icon").click(function(){
+        			$("#chat-text").css("color","#09C262");
+        			$("#contacts-text").css("color","black");
+        			$("#discover-text").css("color","black");
+        			$("#me-text").css("color","black");
+        			$("#chat-icon").attr("src","img/chat (green).svg");
+        			$("#contacts-icon").attr("src","img/contacts.svg");
+        			$("#discover-icon").attr("src","img/发现.svg");
+        			$("#me-icon").attr("src","img/我 .svg");
+        		})
+        	    $("#contacts-icon").click(function(){
+        	    	$("#chat-text").css("color","black");
+        	    	$("#contacts-text").css("color","#09C262");
+        	    	$("#discover-text").css("color","black");
+        			$("#me-text").css("color","black");
+        	    	$("#chat-icon").attr("src","img/chat.svg");
+        			$("#contacts-icon").attr("src","img/contacts (green).svg");
+        			$("#discover-icon").attr("src","img/发现.svg");
+        			$("#me-icon").attr("src","img/我 .svg");
+        		})
+        	    $("#discover-icon").click(function(){
+        	    	$("#chat-text").css("color","black");
+        	    	$("#contacts-text").css("color","black");
+        	    	$("#discover-text").css("color","#09C262");
+        			$("#me-text").css("color","black");
+        	    	$("#chat-icon").attr("src","img/chat.svg");
+        			$("#contacts-icon").attr("src","img/contacts.svg");
+        			$("#discover-icon").attr("src","img/发现 (green).svg");
+        			$("#me-icon").attr("src","img/我 .svg");
+        		})
+        	     $("#me-icon").click(function(){
+        	    	$("#chat-text").css("color","black");
+        	    	$("#contacts-text").css("color","black");
+        	    	$("#discover-text").css("color","black");
+        			$("#me-text").css("color","#09C262");
+        	    	$("#chat-icon").attr("src","img/chat.svg");
+        			$("#contacts-icon").attr("src","img/contacts.svg");
+        			$("#discover-icon").attr("src","img/发现.svg");
+        			$("#me-icon").attr("src","img/我（green）.svg");
+        		})
+        	
+        	})
+        </script>
+	</body>
+
+</html>
