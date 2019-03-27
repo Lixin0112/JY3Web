@@ -1,0 +1,38 @@
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	background-color: #EDEDED;
+}
+#discover-fixed{
+	width:100%;
+	height:8%;
+	background-color: #EDEDED;
+	display: flex;
+}
+
+#chat-top-left{
+	flex:4;
+	
+}
+#chat-top-middle{
+	flex:2; 
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	line-height: 100%;
+}
+#tittle{
+	font-weight:600;
+	font-size: 15px;
+}
+
+#chat-top-right{
+	flex:4;
+}
+
+
