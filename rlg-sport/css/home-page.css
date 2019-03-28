@@ -1,0 +1,98 @@
+body{
+	width:100%;
+	height:100%;
+	position:fixed;
+	margin: 0;
+	padding: 0;
+	background-color:black;
+}
+
+#sign{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width:100%;
+	height:8%;
+}
+#sign-up,#sign-in{
+	color:#FF9933;
+	font-size: 14px;
+	width:16%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	font-size:16px;
+}
+#sign img{
+	height:70%;
+	width:25%;
+}
+#banner{
+	height:25%;
+	width:100%;
+}
+#banner img{
+	height: 100%;
+	width: 100%;
+}
+#hot-sale{
+	width:100%;
+	height:64%;
+	display: flex;
+	flex-wrap:wrap;
+}
+p{
+	width:100%;
+	height:6%;
+	color:#FF9933;
+	margin:0;
+	font-size: 16px;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+#hot-sale div{
+	width:50%;
+	height:47%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#hot-sale img{
+	width: 80%;
+	height:80%;
+}
+#hot-sale span{
+	line-height: 20%;
+	text-align: center;
+	color:#FF9933 ;
+	font-size: 12px;
+}
+#a-up:link{
+	color: #FF9933 ;
+}
+#a-up:visited{
+	color: #FF9933 ;
+}
+#a-up:hover{
+	color: #FF9933 ;
+}
+#a-up:active{
+	color: #FF9933 ;
+}
+#a-in:link{
+	color: #FF9933 ;
+}
+#a-in:visited{
+	color: #FF9933 ;
+}
+#a-in:hover{
+	color: #FF9933 ;
+}
+#a-in:active{
+	color: #FF9933 ;
+}
+#a-up,#a-in{
+	text-decoration: none;
+}
