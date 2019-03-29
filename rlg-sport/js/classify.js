@@ -11,5 +11,4 @@ $(function(){
 	+"<li><a id='p-6' href='classify-n/p-6.html' target='goto'><img src='http://pp0gijgoa.bkt.clouddn.com/%E5%A8%B1%E4%B9%90-%E6%B8%B8%E6%B3%B3.svg'/>泳具</a></li>"
 	+"<li><a id='p-7' href='classify-n/p-7.html' target='goto'><img src='http://pp0gijgoa.bkt.clouddn.com/%E9%98%B2%E6%8A%A4%E6%9C%8D.svg'/>护具装备</a></li></ul>")
 	$("#goods").append("<iframe src='classify-n/p-1.html' name='goto'></iframe>")
-	
 })
