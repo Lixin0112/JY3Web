@@ -1,0 +1,97 @@
+body{
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width:100%;
+	background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+#title{
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding:20px;
+	color: #FF9933;
+}
+#title img{
+	height:50px;
+	width:50px;
+	margin-right:5%;
+}
+.goods{
+	display: flex;
+	align-items: center;
+	width:90%;
+	height:20%;
+	color:white;
+	background-color:#FF9933 ;
+	border-radius: 20px;
+	justify-content: center;
+	border: 3px white   groove; 
+	margin-bottom: 5%;
+}
+select{
+	color: white;
+	background-color: #FF9933;
+	border-color: white;
+}
+.pic{
+	width:40%;
+	height: 80%;
+    text-align: center;
+    display: flex;
+}
+.pic img{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+}
+.details{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width:60%;
+	height: 80%;
+}
+.price-count{
+	display: flex;
+}
+.count{
+	display: flex;
+	justify-content: center;
+}
+.count input{
+	width:20%;
+	text-align: end;
+	color: white;
+	background-color: #FF9933;
+	border-color: white;
+}
+button img{
+	width: 10px;
+	height: 10px;
+}
+#bottom{
+	width: 90%;
+	height: 5%;
+
+	bottom:0;
+	color:  white;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10%;
+}
+#total{
+	margin-right: 5%;
+}
+#pay button{
+	background-color: #FF9933;
+	border-radius: 20px;
+}
+#pay a{
+	text-decoration: none;
+}

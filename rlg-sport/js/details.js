@@ -25,6 +25,6 @@ $(function(){
 	+"<div id='num-in'><input type='text'/ placeholder='1'>件</label></div>"
 	+"</div>")
 	
-	$("body").append("<div id='car'><button><img src='http://pp0gijgoa.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6.svg'/>加入购物车</button></div>")
+	$("body").append("<div id='car'><a href='shopping-cart.html' target='go'><button><img src='http://pp0gijgoa.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6.svg'/>加入购物车</button></a></div>")
 	
 })

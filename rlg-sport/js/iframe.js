@@ -3,8 +3,8 @@ $(function(){
 	"<img id='rlg' src='http://pp0gijgoa.bkt.clouddn.com/rlg-logo.png' />"+
 	"<ul><li id='li-1'><a href='home-page.html' target='go'>首页</a></li>"+
 	"<li id='li-2'><a href='classify.html' target='go'>商品分类</a></li>"+
-	"<li id='li-3'><a href=' ' target='go'>我</a></li>"+
-	"<li id='li-4'><a href=' ' target='go'>购物车</a></li></ul>"
+	"<li id='li-3'><a href='me.html' target='go'>我</a></li>"+
+	"<li id='li-4'><a href='shopping-cart.html' target='go'>购物车</a></li></ul>"
 	)
 	$("#li-1").click(function(){
 		$("#li-1").css("background-color","#FF9933");
